@@ -29,7 +29,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.get('#email').type('walmyr@exemplo,com')
         cy.get('#open-text-area').type('test')
         cy.contains('button', 'Enviar').click() 
-        //cy.get('button[type="submit"]').click()           
+        cy.get('button[type="submit"]').click()           
 
         cy.get('.error').should('be.visible')      
 
